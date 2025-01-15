@@ -39,6 +39,18 @@ class personaje:
         enemigo.vida =enemigo.vida - daño
         print(self.nombre, "ha realizado", daño, "puntos de daño a", enemigo.nombre)
         print("Vida de" , enemigo.nombre, "es", enemigo.vida)
+        
+class gerrero(personaje):
+
+    #sobreescribir el constructor
+    def __init__(self,nombre,furza,integencia,defensa,vida, espada):
+        super().__init__(nombre,furza,integencia,defensa, vida)
+        self.espada
+        
+
+arturoSuarez = gerrero("Arturo Suarez" , 12, 3000 , 2 , 100 ,.5)
+arturoSuarez.imprimir_atributos()
+print("El valor de espada es:" , arturoSuarez.espada)
     
 #Variable del constructor vacío
 mi_personaje = personaje("EsteBandido", 100, 50, 45, 100 )
